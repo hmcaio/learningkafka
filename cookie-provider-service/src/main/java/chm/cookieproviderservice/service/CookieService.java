@@ -21,7 +21,6 @@ public class CookieService {
     public void sendToKafka(final String cookieType) {
         final String messageKey = UUID.randomUUID().toString();
         System.out.println("Sending to Kafka: " + cookieType);
-//        kafkaTemplate.send(COOKIE_TOPIC, messageKey, cookieType);
-
+        kafkaTemplate.send(COOKIE_TOPIC, messageKey, cookieType);
     }
 }
