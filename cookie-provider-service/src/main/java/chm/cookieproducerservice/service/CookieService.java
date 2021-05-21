@@ -1,4 +1,4 @@
-package chm.cookieproviderservice.service;
+package chm.cookieproducerservice.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -13,6 +13,7 @@ public class CookieService {
     private String COOKIE_TOPIC;
 
     private final KafkaTemplate kafkaTemplate;
+
 
     public CookieService(KafkaTemplate kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;

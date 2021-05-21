@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>chm</groupId>
-	<artifactId>cookie-provider-service</artifactId>
+	<artifactId>cookie-producer-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cookie-provider-service</name>
-	<description>Cookie provider service</description>
+	<name>cookie-producer-service</name>
+	<description>Cookie producer service</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

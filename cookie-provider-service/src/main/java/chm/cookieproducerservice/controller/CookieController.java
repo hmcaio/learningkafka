@@ -1,6 +1,6 @@
-package chm.cookieproviderservice.controller;
+package chm.cookieproducerservice.controller;
 
-import chm.cookieproviderservice.service.CookieService;
+import chm.cookieproducerservice.service.CookieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

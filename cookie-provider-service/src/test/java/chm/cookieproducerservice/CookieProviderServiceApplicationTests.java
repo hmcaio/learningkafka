@@ -1,4 +1,4 @@
-package chm.cookieproviderservice;
+package chm.cookieproducerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
