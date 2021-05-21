@@ -1,5 +1,6 @@
 package chm.cookieproducerservice.controller;
 
+import chm.cookieproducerservice.model.CookieOrder;
 import chm.cookieproducerservice.service.CookieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,8 +15,8 @@ public class CookieController {
 
 
     @PostMapping(path="/cookie-request")
-    public void receiveCookieRequest(@RequestBody String cookieType) {
-        System.out.println("Received post request: " + cookieType);
-        cookieService.sendToKafka(cookieType);
+    public void receiveCookieRequest(@RequestBody CookieOrder cookieOrder) {
+        System.out.println("Received post request: " + cookieOrder);
+        cookieService.sendToKafka(cookieOrder);
     }
 }

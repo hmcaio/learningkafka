@@ -1,5 +1,6 @@
 package chm.cookieproducerservice.service;
 
+import chm.cookieproducerservice.model.CookieOrder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
@@ -19,9 +20,9 @@ public class CookieService {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    public void sendToKafka(final String cookieType) {
+    public void sendToKafka(final CookieOrder cookieOrder) {
         final String messageKey = UUID.randomUUID().toString();
-        System.out.println("Sending to Kafka: " + cookieType);
-        kafkaTemplate.send(COOKIE_TOPIC, messageKey, cookieType);
+        System.out.println("Sending to Kafka: " + cookieOrder);
+        kafkaTemplate.send(COOKIE_TOPIC, messageKey, cookieOrder);
     }
 }
