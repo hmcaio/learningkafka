@@ -1,29 +1,17 @@
-# README #
+# learningkafka #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is a simple project to learn Kakfa. The Kafka setup is done with Docker images. There is one Java producer and one Python consumer that communicate using a single topic.
 
-### What is this repository for? ###
+### Requirements ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The project was created with the following dependencies and versions:
+* Docker (20.10.6)
+* Docker Compose (1.29.1)
+* Java (1.8.0_181)
+* Python (3.8.5)
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
+### Contents of the project ###
 
 * Writing tests
 * Code review
 * Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
