@@ -2,12 +2,14 @@ import sys
 from kafka import KafkaConsumer
 import json
 
+print("Starting consumer")
+
 consumer = KafkaConsumer(
     'cookie-topic',
-    bootstrap_servers = ['localhost:9092'],
+    bootstrap_servers = ['kafka:29092'],
 #    auto_offset_reset = 'earliest',
     enable_auto_commit = True,
-    group_id = 'consumer-group-0',
+#    group_id = 'consumer-group-0',
     value_deserializer = lambda m: json.loads(m.decode('utf-8'))
 )
 
@@ -17,4 +19,3 @@ for message in consumer:
         print('I got a {} cookie!'.format(cookie_order['type']))
     except:
         print("Vish", sys.exec_info()[0])
-
