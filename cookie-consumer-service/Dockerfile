@@ -19,3 +19,6 @@ COPY ./src .
 ENV PATH=/root/.local:$PATH
 
 CMD ["python", "./CookieConsumerService.py"]
+
+# docker image build --tag cookie-consumer-service .
+# docker container run -it --rm --network learningkafka_default cookie-consumer-service
